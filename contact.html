@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | The Cozy Cup Café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" href="index.html">The Cozy Cup Café</a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="contact.html" aria-current="page">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <section class="page-intro">
+            <p class="eyebrow">We would love to hear from you</p>
+            <h1>Contact Us</h1>
+            <p>Have a question or a suggestion? Send a message using the form below.</p>
+        </section>
+
+        <section class="contact-layout" aria-label="Contact form">
+            <div class="contact-card">
+                <h2>Get in Touch</h2>
+                <p>
+                    Whether you have a question about our menu or simply want to share
+                    your feedback, please write to us.
+                </p>
+                <p class="contact-note">
+                    This is a sample website form. It displays a confirmation message
+                    but does not send information to a server.
+                </p>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+
+                <button class="button" type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p class="footer-name">The Cozy Cup Café</p>
+        <p>&copy; 2026 The Cozy Cup Café. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const contactForm = document.getElementById("contactForm");
+
+        contactForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            window.alert("Thank you for contacting The Cozy Cup Cafe!");
+            console.log("Contact form submitted (demo only).");
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>
