@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | The Cozy Cup Café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" href="index.html">The Cozy Cup Café</a>
+
+            <div class="nav-links">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">Freshly brewed, warmly served</p>
+                <h1>Welcome to The Cozy Cup Café</h1>
+                <p class="intro">
+                    Take a break, relax, and enjoy a freshly brewed cup of coffee.
+                    From delicious drinks to tasty snacks, our café is a cosy place
+                    to catch up with friends or enjoy a little time for yourself.
+                </p>
+                <div class="hero-actions">
+                    <a class="button" href="menu.html">View Our Menu</a>
+                    <button class="button button-secondary" type="button" onclick="showWelcomeMessage()">
+                        Say Hello
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="coffee.jpg" alt="A cup of latte with coffee beans on a wooden table">
+            </div>
+        </section>
+
+        <section class="welcome-note">
+            <h2>A Little Coffee, A Lot of Comfort</h2>
+            <p>Good coffee and a welcoming atmosphere make every visit special.</p>
+        </section>
+
+        <section class="opening-hours" aria-labelledby="opening-hours-heading">
+            <h2 id="opening-hours-heading">Opening Hours</h2>
+            <table class="opening-hours-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Days</th>
+                        <th scope="col">Opening Times</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday - Friday</td>
+                        <td>8:00 AM - 10:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday - Sunday</td>
+                        <td>9:00 AM - 11:00 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p class="footer-name">The Cozy Cup Café</p>
+        <p>&copy; 2026 The Cozy Cup Café. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showWelcomeMessage() {
+            window.alert("Welcome to our cafe!");
+        }
+    </script>
+</body>
+</html>
