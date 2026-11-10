@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | The Cozy Cup Café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" href="index.html">The Cozy Cup Café</a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html" aria-current="page">Menu</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="menu-page">
+        <section class="page-intro">
+            <p class="eyebrow">Something delicious for every moment</p>
+            <h1>Our Café Menu</h1>
+            <p>Explore our selection of freshly prepared drinks, snacks, and desserts.</p>
+        </section>
+
+        <section class="menu-section" aria-label="Café menu">
+            <table class="menu-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Item</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Coffee</td>
+                        <td>Latte</td>
+                        <td>Rs 400</td>
+                    </tr>
+                    <tr>
+                        <td>Snacks</td>
+                        <td>Sandwich</td>
+                        <td>Rs 500</td>
+                    </tr>
+                    <tr>
+                        <td>Dessert</td>
+                        <td>Brownie</td>
+                        <td>Rs 300</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="menu-action">
+            <p>Found something you like? Let us know!</p>
+            <button class="button" type="button" onclick="confirmOrder()">Order Now</button>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p class="footer-name">The Cozy Cup Café</p>
+        <p>&copy; 2026 The Cozy Cup Café. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function confirmOrder() {
+            window.alert("Thank you! Your order has been noted.");
+            console.log("Order button was clicked");
+        }
+    </script>
+</body>
+</html>
