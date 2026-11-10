@@ -1,0 +1,45 @@
+/* Colours: brown #5b3a29, cream #f5ecd9, dark grey #2f2f2f */
+/* Font: Georgia */
+
+/* Page background, main text colour and body font */
+body {
+  background-color: #f5ecd9;
+  color: #2f2f2f;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Heading font and size */
+h1 {
+  color: #5b3a29;
+  font-family: Georgia, serif;
+  font-size: 40px;
+}
+
+/* Table */
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #5b3a29;
+  color: #f5ecd9;
+}
+
+th, td {
+  border: 1px solid #5b3a29;
+  padding: 10px 20px;
+}
+
+/* Button: background colour, text colour and rounded corners */
+button {
+  background-color: #5b3a29;
+  color: #f5ecd9;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+}
